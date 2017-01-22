@@ -182,10 +182,10 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
    var numDisplayed = 0;
    var tocTable = '';
-   var tocHead1 = 'Judul';
-   var tocTool1 = 'Klik untuk menyortir berdasarkan judul';
-   var tocHead2 = 'Tanggal publikasi';
-   var tocTool2 = 'Klik untuk menyortir berdasarkan tanggal';
+   var tocHead1 = 'JUDUL';
+   var tocTool1 = 'Click to sort by title';
+   var tocHead2 = 'TANGGAL';
+   var tocTool2 = 'Click to sort by date';
    var tocHead3 = 'LABEL';
    var tocTool3 = '';
    if (sortBy == "titleasc") { 
@@ -235,7 +235,7 @@ function displayToc(filter) {
    if (numDisplayed == postTitle.length) {
       var tocNote = '<span class="toc-note">Menampilkan ' + postTitle.length + ' posts<br/></span>'; }
    else {
-      var tocNote = '<span class="toc-note">Displaying ' + numDisplayed + ' posts labeled \'';
+      var tocNote = '<span class="toc-note">Menampilkan ' + numDisplayed + ' posts labeled \'';
       tocNote += postFilter + '\' of '+ postTitle.length + ' posts total<br/></span>';
    }
    tocdiv.innerHTML = tocNote + tocTable;
